@@ -1,8 +1,27 @@
 # 🚀 Official Engineering Correction: Elektor Magazine (2026)
 
-This repository documents an official technical correction regarding the *"Rhythmic Bass Light"* circuit (article 260142 by Giuseppe La Rosa) in **Elektor Magazine** (Circuit Special 2026, No. 547), where a printed 70 Hz cutoff frequency was verified through calculations to actually be approximately 724 Hz. The correction was officially published in the **November & December 2026** edition (No. 549) following approval by Editor-in-Chief Roberto Armani.
+This repository documents an official technical correction regarding the *"Rhythmic Bass Light"* circuit in **Elektor Magazine**, where a printed 70 Hz cutoff frequency was verified through calculations to actually be approximately 724 Hz, later acknowledged by the editorial board.
 
-### Overview and Errata
-* **Cover & Error:** Features the No. 547 issue cover and the printed paragraph stating the incorrect 70 Hz value (`july_august_cover.png`, `errata_magazine.png`).
-* **Verification:** Calculations using $R_3 = 22\text{ k}\Omega$ and $C_3 = 10\text{ nF}$ establish the active inverting low-pass filter frequency at ~724 Hz.
-* **Official Response:** Includes the No. 549 cover and the published editorial reply from Roberto Armani confirming the typo should have reported '≈ 700 Hz' (`november_december_cover.png`, `elektor_reply.png`).
+---
+
+## 🔍 The Discovered Errata: "Rhythmic Bass Light"
+
+### 1. Original Publication & Error
+![July/August Cover](july_august_cover.png)
+![Errata Magazine](errata_magazine.png)
+
+### 2. My Mathematical Analysis & Verification
+Using the circuit's fixed feedback resistance ($R_3 = 22\text{ k}\Omega$) and filter capacitor ($C_3 = 10\text{ nF}$), the active inverting filter formula yields $F_c \approx 724\text{ Hz}$ rather than the printed 70 Hz.
+
+---
+
+## 🏆 Official Editorial Approval & Publication
+![November/December Cover](november_december_cover.png)
+![Elektor Reply](elektor_reply.png)
+
+> *"Thanks for your report. Indeed, it's a typo. The indicated component values are correct: The text should have reported '≈ 700 Hz'."*  
+> — **Roberto Armani**, Editor-in-Chief, Elektor Magazine
+
+**Reported and documented by:**  
+Bjørnar Mogård (Norway)  
+*Hardware Integrity & Electronics Review*
